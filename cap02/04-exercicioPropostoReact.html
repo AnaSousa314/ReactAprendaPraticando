@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    
+    const a1 = React.createElement("a",{href:"indexx.html"},"Home");
+    const a2 = React.createElement("a",{href:"livros.html"},"Livros");
+    const a3 = React.createElement("a",{href:"autores.html"},"Autores");
+
+    const l1 = React.createElement("li",{},a1);
+    const l2 = React.createElement("li",{},a2);
+    const l3 = React.createElement("li",{},a3);
+
+    const ul = React.createElement("ul",{},l1,l2,l3);
+
+    const nav = React.createElement("nav",{className:"menu"},ul);
+
+    ReactDOM.render(nav,document.getElementById("root"))
+
+  </script>
+</body>
+</html>
