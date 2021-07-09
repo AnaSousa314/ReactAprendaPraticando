@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- <nav class="menu">
+    <ul>
+      <li><a href="indexx.html">Home</a></li>
+      <li><a href="livros.html">Livros</a></li>
+      <li><a href="autores.html">Autores</a></li>
+    </ul>
+  </nav> -->
+
+  <script>
+    var a1 = document.createElement("a");
+        a1.setAttribute("href","indexx.html");
+        a1.innerText = "Home";
+    var a2 = document.createElement("a");
+        a2.setAttribute("href","livros.html");
+        a2.innerText = "Livros";
+    var a3 = document.createElement("a");
+        a3.setAttribute("href","autores.html");
+        a3.innerText = "Autores";
+    var li1 = document.createElement("li");
+        li1.appendChild(a1);
+    var li2 = document.createElement("li");
+        li2.appendChild(a2);
+    var li3 = document.createElement("li");
+        li3.appendChild(a3);
+
+    var ul = document.createElement("ul");
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+    var nav = document.createElement("nav");
+        nav.setAttribute("class","menu");
+        nav.appendChild(ul);
+    var root = document.getElementById("root");
+        root.appendChild(nav);
+
+  </script>
+</body>
+</html>
